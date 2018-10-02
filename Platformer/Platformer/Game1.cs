@@ -38,7 +38,9 @@ namespace Platformer
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            player.Load(Content); // Call the 'Load' function in the Player class.
+            player.Load(Content, this); // Call the 'Load' function in the Player class.
+            //'this' basically means "pass all information in our class through as a variable"
+
 
             BoxingViewportAdapter viewportAdapter = new BoxingViewportAdapter(Window,
                                                         GraphicsDevice,
@@ -65,7 +67,9 @@ namespace Platformer
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             player.Update(deltaTime); // Call the 'Update' from our Player class.
 
-            // TODO: Add your update logic here
+            // This makes the camera follow the player's position, it also should center the player to the centr of the camera
+            camera.Position = player.playerSprite.position - new Vector2(graphics.GraphicsDevice.Viewport.Width / 2,
+                                                                            graphics.GraphicsDevice.Viewport.Height / 2);
 
             base.Update(gameTime);
         }
