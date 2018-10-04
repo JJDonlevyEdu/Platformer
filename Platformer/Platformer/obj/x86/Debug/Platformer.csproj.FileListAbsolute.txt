@@ -63,3 +63,4 @@ C:\Users\jesse.donlevy\Documents\GitHub\Platformer\Platformer\Platformer\bin\Win
 C:\Users\jesse.donlevy\Documents\GitHub\Platformer\Platformer\Platformer\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.pdb
 C:\Users\jesse.donlevy\Documents\GitHub\Platformer\Platformer\Platformer\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.xml
 C:\Users\jesse.donlevy\Documents\GitHub\Platformer\Platformer\Platformer\bin\Windows\x86\Debug\Newtonsoft.Json.xml
+C:\Users\jesse.donlevy\Documents\GitHub\Platformer\Platformer\Platformer\bin\Windows\x86\Debug\Content\walk.xnb

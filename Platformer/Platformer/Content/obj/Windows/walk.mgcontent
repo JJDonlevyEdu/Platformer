@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/jesse.donlevy/Documents/GitHub/Platformer/Platformer/Platformer/Content/hero.png</SourceFile>
-  <SourceTime>2016-05-20T11:00:38+10:00</SourceTime>
-  <DestFile>C:/Users/jesse.donlevy/Documents/GitHub/Platformer/Platformer/Platformer/Content/bin/Windows/hero.xnb</DestFile>
-  <DestTime>2018-10-04T10:46:25.0945513+10:00</DestTime>
+  <SourceFile>C:/Users/jesse.donlevy/Documents/GitHub/Platformer/Platformer/Platformer/Content/walk.png</SourceFile>
+  <SourceTime>2018-10-04T10:05:13.8315513+10:00</SourceTime>
+  <DestFile>C:/Users/jesse.donlevy/Documents/GitHub/Platformer/Platformer/Platformer/Content/bin/Windows/walk.xnb</DestFile>
+  <DestTime>2018-10-04T10:46:25.2525513+10:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-02T02:05:36+11:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

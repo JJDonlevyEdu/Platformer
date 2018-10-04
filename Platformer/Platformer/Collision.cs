@@ -70,7 +70,7 @@ namespace Platformer
 
             if (IsColliding(playerPrediction, tile) == true && hero.velocity.X > 0)
             {
-                hero.position.X = tile.leftEdge - hero.width - hero.offset.X;
+                hero.position.X = tile.leftEdge - hero.width + hero.offset.X;
                 hero.velocity.X = 0;
             }
 
@@ -214,6 +214,34 @@ namespace Platformer
             if (topCheck == true) // Check for collision with the tiles above the player
             {
                 hero = CollideAbove(hero, topTile, playerPrediction);
+            }
+
+            // Check for collisions with the tiles below and to the left of the player...
+            if (leftCheck == false && bottomCheck == false && bottomLeftCheck == true)
+            {
+                //... then properly check for the diagonals.
+                hero = CollideBottomDiagonals(hero, bottomLeftTile, playerPrediction);
+            }
+
+            // Check for collisions with the tiles below and to the right of the player...
+            if (rightCheck == false && bottomCheck == false && bottomRightCheck == true)
+            {
+                // ... then properly check for the diagonals.
+                hero = CollideBottomDiagonals(hero, bottomRightTile, playerPrediction);
+            }
+
+            // Check for collisions with the tiles above and to the left of the player...
+            if (leftCheck == false && topCheck == false && topLeftCheck == true)
+            {
+                //... then properly check the diagonal.
+                hero = CollideAboveDiagonals(hero, topLeftTile, playerPrediction);
+            }
+
+            // Check for collisions with the tiles above and to the right of the player...
+            if (rightCheck == false &&  topCheck == false && topRightCheck == true)
+            {
+                //... then properly check the diagonals
+                hero = CollideAboveDiagonals(hero, topRightTile, playerPrediction);
             }
 
             return hero;
